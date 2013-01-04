@@ -8,8 +8,10 @@
 
 #import "HelloWorld.h"
 
+// HelloWorldの実装
 @implementation HelloWorld
 
+// 初期化
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -19,13 +21,10 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+// 描画
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    UIFont* font = [UIFont systemFontOfSize:24];
+    [@"Hello, World" drawAtPoint:CGPointMake(0,0) withFont:font];
 }
-*/
-
 @end

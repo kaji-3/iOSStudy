@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// AppDelegate の宣言
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
     UIWindow* _window;
 }
 
-@property (strong, nonatomic) UIWindow *window;
+// プロパティの宣言
+@property (nonatomic, retain) UIWindow *window;
 
 @end

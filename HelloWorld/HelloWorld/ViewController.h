@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// ViewControllerの宣言
 @interface ViewController : UIViewController
 
 @end

@@ -8,12 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
+// ViewControllerの実装
 @implementation ViewController
 
+// 初期化
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,12 +21,14 @@
     return self;
 }
 
+// ロード時に呼ばれる
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
+// メモリ警告時に呼ばれる
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -22,6 +23,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIViewController* viewCtl = [[[ViewController alloc] init] autorelease];
+    _window.rootViewController = viewCtl;
     return YES;
 }
 

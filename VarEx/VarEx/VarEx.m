@@ -31,25 +31,11 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    int num0;
-    int num1;
-    int sum;
+    // 日付用データの作成
+    NSDate* date = [NSDate date];
+    NSString* text = [date description];
     
-    num0 = 100;
-    num1 = 200;
-    sum = num0 + num1;
-    
-    NSString* text = [NSString stringWithFormat:@"合計=%d", sum];
-    
-    [[UIColor blackColor]set];
-     
-    UIFont* font =[UIFont systemFontOfSize:24];
-     
-    [text drawAtPoint:CGPointMake(100, 200) withFont:font];
-    
-    [@"Hellow?" drawAtPoint:CGPointMake(0, 0) withFont:font];
-    
-    // Drawing code
+    [text drawAtPoint:CGPointMake(0, 0) withFont:[UIFont systemFontOfSize:24]];
 }
 
 @end

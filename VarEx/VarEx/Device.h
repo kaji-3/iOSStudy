@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Device : NSObject
+@interface Device : NSObject{
+    NSString* _name;
+    int _version;
+}
 
+
+@property (nonatomic,retain)NSString* name;
+@property int version;
+
+- (NSString*)info;
 @end

@@ -19,6 +19,7 @@
 		C751CB5716AAC10E0027391C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C751CB5516AAC10E0027391C /* ViewController.m */; };
 		C751CB5816AAC10E0027391C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C751CB5616AAC10E0027391C /* ViewController.xib */; };
 		C751CB5B16AAC1890027391C /* VarEx.m in Sources */ = {isa = PBXBuildFile; fileRef = C751CB5A16AAC1890027391C /* VarEx.m */; };
+		C75DE7EB16AADE4D00469A96 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = C75DE7EA16AADE4D00469A96 /* Device.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		C751CB5616AAC10E0027391C /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		C751CB5916AAC1890027391C /* VarEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VarEx.h; sourceTree = "<group>"; };
 		C751CB5A16AAC1890027391C /* VarEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VarEx.m; sourceTree = "<group>"; };
+		C75DE7E916AADE4D00469A96 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		C75DE7EA16AADE4D00469A96 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				C751CB5616AAC10E0027391C /* ViewController.xib */,
 				C751CB5916AAC1890027391C /* VarEx.h */,
 				C751CB5A16AAC1890027391C /* VarEx.m */,
+				C75DE7E916AADE4D00469A96 /* Device.h */,
+				C75DE7EA16AADE4D00469A96 /* Device.m */,
 			);
 			path = VarEx;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				C751CB4816AABF840027391C /* AppDelegate.m in Sources */,
 				C751CB5716AAC10E0027391C /* ViewController.m in Sources */,
 				C751CB5B16AAC1890027391C /* VarEx.m in Sources */,
+				C75DE7EB16AADE4D00469A96 /* Device.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				C751CB5316AABF840027391C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "VarEx.h"
+#import "Device.h"
 
 @implementation VarEx
 
@@ -19,6 +20,12 @@
     return self;
 }
 
+// メモリ解放
+- (void)dealloc {
+    [super dealloc];
+}
+
+// 画面初期化
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self=[super initWithCoder:aDecoder];
     
@@ -31,11 +38,17 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    // 日付用データの作成
-    NSDate* date = [NSDate date];
-    NSString* text = [date description];
+    [[UIColor blackColor]set];
+    UIFont* font =[UIFont systemFontOfSize:24];
+    NSString* text;
     
-    [text drawAtPoint:CGPointMake(0, 0) withFont:[UIFont systemFontOfSize:24]];
+    Device* device = [[[Device alloc] init ] autorelease ];
+    
+    device.name = @"iphone";
+    device.version = 6;
+    
+    text = [device info];
+    [text drawAtPoint:CGPointMake(100, 200) withFont:font];
 }
 
 @end

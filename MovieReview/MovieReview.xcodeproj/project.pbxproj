@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFDF16AC860600697898 /* Storyboard.storyboard */; };
+		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
+		C72BFFE616AC870F00697898 /* StoryboardEx.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE516AC870F00697898 /* StoryboardEx.m */; };
+		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
+		C787273016AC90B500EF6A01 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */; };
+		C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */; };
+		C787273516AC90C100EF6A01 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */; };
+		C787273716AC90C500EF6A01 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */; };
 		C7874C7916AC7DC7008852FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7874C7816AC7DC7008852FD /* UIKit.framework */; };
 		C7874C7B16AC7DC7008852FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7874C7A16AC7DC7008852FD /* Foundation.framework */; };
 		C7874C7D16AC7DC7008852FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7874C7C16AC7DC7008852FD /* CoreGraphics.framework */; };
@@ -23,6 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C72BFFDF16AC860600697898 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
+		C72BFFE416AC870F00697898 /* StoryboardEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardEx.h; sourceTree = "<group>"; };
+		C72BFFE516AC870F00697898 /* StoryboardEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardEx.m; sourceTree = "<group>"; };
+		C72BFFE716AC8ADB00697898 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		C72BFFE816AC8ADB00697898 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		C7874C7416AC7DC7008852FD /* MovieReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7874C7816AC7DC7008852FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7874C7A16AC7DC7008852FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +78,11 @@
 		C7874C6916AC7DC7008852FD = {
 			isa = PBXGroup;
 			children = (
+				C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */,
+				C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */,
+				C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */,
+				C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */,
+				C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */,
 				C7874C9D16AC7F1A008852FD /* Default@2x.png */,
 				C7874C9B16AC7F0B008852FD /* Default.png */,
 				C7874C9916AC7F00008852FD /* Default-568h@2x.png */,
@@ -92,9 +115,14 @@
 		C7874C7E16AC7DC7008852FD /* MovieReview */ = {
 			isa = PBXGroup;
 			children = (
+				C72BFFDF16AC860600697898 /* Storyboard.storyboard */,
 				C7874C8716AC7DC7008852FD /* AppDelegate.h */,
 				C7874C8816AC7DC7008852FD /* AppDelegate.m */,
 				C7874C7F16AC7DC7008852FD /* Supporting Files */,
+				C72BFFE416AC870F00697898 /* StoryboardEx.h */,
+				C72BFFE516AC870F00697898 /* StoryboardEx.m */,
+				C72BFFE716AC8ADB00697898 /* About.h */,
+				C72BFFE816AC8ADB00697898 /* About.m */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -172,6 +200,12 @@
 				C7874C9A16AC7F00008852FD /* Default-568h@2x.png in Resources */,
 				C7874C9E16AC7F1A008852FD /* Default@2x.png in Resources */,
 				C7874C9F16AC7FAA008852FD /* Default.png in Resources */,
+				C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */,
+				C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */,
+				C787273016AC90B500EF6A01 /* Default-Landscape~ipad.png in Resources */,
+				C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */,
+				C787273516AC90C100EF6A01 /* Default-Portrait~ipad.png in Resources */,
+				C787273716AC90C500EF6A01 /* Default-Landscape@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +218,8 @@
 			files = (
 				C7874C8516AC7DC7008852FD /* main.m in Sources */,
 				C7874C8916AC7DC7008852FD /* AppDelegate.m in Sources */,
+				C72BFFE616AC870F00697898 /* StoryboardEx.m in Sources */,
+				C72BFFE916AC8ADB00697898 /* About.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +328,7 @@
 				C7874C9416AC7DC7008852FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

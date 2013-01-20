@@ -1,18 +1,18 @@
 //
-//  StoryboardEx.m
+//  About.m
 //  MovieReview
 //
 //  Created by y_kajikawa on 13/01/21.
 //  Copyright (c) 2013年 y_kajikawa. All rights reserved.
 //
 
-#import "StoryboardEx.h"
+#import "About.h"
 
-@interface StoryboardEx ()
+@interface About ()
 
 @end
 
-@implementation StoryboardEx
+@implementation About
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,5 +39,6 @@
     
     NSLog(@"prepareForSeque>%@", [segue identifier]);
 }
+
 
 @end

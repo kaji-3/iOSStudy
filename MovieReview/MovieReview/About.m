@@ -37,7 +37,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NSLog(@"prepareForSeque>%@", [segue identifier]);
+    NSLog(@"prepareForSeque>%@ - %@", [segue identifier], [[self class] description]);
 }
 
 

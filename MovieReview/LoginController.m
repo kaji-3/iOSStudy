@@ -37,7 +37,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NSLog(@"prepareForSeque>%@", [segue identifier]);
+    NSLog(@"prepareForSeque>%@ - %@", [segue identifier], [[self class] description]);
+}
+
+// 画面繊維判定メソッド
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    NSLog(@"<shouldPerformSegueWithIdentifier>");
+    return NO;
 }
 
 @end

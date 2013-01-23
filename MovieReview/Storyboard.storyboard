@@ -35,10 +35,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKeyBoard:" destination="6Zq-XA-4XM" eventType="editingDidEndOnExit" id="0eL-xw-OHP"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ig1-xT-oN8">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="closeKeyBoard:" destination="6Zq-XA-4XM" eventType="editingDidEndOnExit" id="rH2-vd-RE7"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UserID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrJ-fk-CCS">
                                 <constraints>
@@ -70,6 +76,10 @@
                             <constraint firstItem="Ig1-xT-oN8" firstAttribute="leading" secondItem="stz-tN-QwF" secondAttribute="leading" type="default" id="zZL-lb-Hf5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TxtPassword" destination="Ig1-xT-oN8" id="4sh-ha-fly"/>
+                        <outlet property="TxtUserID" destination="stz-tN-QwF" id="q3t-Zp-tM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Baz-wP-zat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +135,11 @@
         </class>
         <class className="LoginController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeKeyBoard:"/>
+                <relationship kind="outlet" name="TxtPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="TxtUserID" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

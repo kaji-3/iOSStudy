@@ -43,8 +43,19 @@
 // 画面繊維判定メソッド
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
-    NSLog(@"<shouldPerformSegueWithIdentifier>");
-    return NO;
+    NSLog(@"<shouldPerformSegueWithIdentifier>%@", _TxtUserID.text);
+    return YES;
 }
 
+//-- リターンキーがタップされたときキーボードを隠す処理
+- (IBAction)closeKeyBoard:(id)sender{
+    [_TxtUserID resignFirstResponder];
+}
+
+- (void)dealloc {
+
+    [_TxtUserID release];
+    [_TxtPassword release];
+    [super dealloc];
+}
 @end

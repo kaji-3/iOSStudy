@@ -10,4 +10,10 @@
 
 @interface LoginController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UITextField *TxtUserID;
+
+@property (retain, nonatomic) IBOutlet UITextField *TxtPassword;
+
+- (IBAction)closeKeyBoard:(id)sender;
+
 @end

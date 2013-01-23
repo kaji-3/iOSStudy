@@ -28,6 +28,7 @@
 		C7874C9A16AC7F00008852FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7874C9916AC7F00008852FD /* Default-568h@2x.png */; };
 		C7874C9E16AC7F1A008852FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7874C9D16AC7F1A008852FD /* Default@2x.png */; };
 		C7874C9F16AC7FAA008852FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C7874C9B16AC7F0B008852FD /* Default.png */; };
+		C7FB9FFC16B045F500F4E7A1 /* MenuTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		C7874C9916AC7F00008852FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C7874C9B16AC7F0B008852FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C7874C9D16AC7F1A008852FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C7FB9FFA16B045F500F4E7A1 /* MenuTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTabBar.h; sourceTree = "<group>"; };
+		C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				C7874C8716AC7DC7008852FD /* AppDelegate.h */,
 				C7874C8816AC7DC7008852FD /* AppDelegate.m */,
 				C7874C7F16AC7DC7008852FD /* Supporting Files */,
+				C7FB9FFA16B045F500F4E7A1 /* MenuTabBar.h */,
+				C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				C7874C8916AC7DC7008852FD /* AppDelegate.m in Sources */,
 				C72BFFE916AC8ADB00697898 /* About.m in Sources */,
 				C787273D16AC949D00EF6A01 /* LoginController.m in Sources */,
+				C7FB9FFC16B045F500F4E7A1 /* MenuTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

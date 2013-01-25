@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self loadWebPage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,5 +39,11 @@
 - (void)dealloc {
     [_webView release];
     [super dealloc];
+}
+
+- (void)loadWebPage {
+    NSURL *url = [NSURL URLWithString:@"http://www.yahoo.co.jp"];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:req];
 }
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebBrowserController : UIViewController<UIWebViewDelegate>
+@interface WebBrowserController : UIViewController
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
 
 @end

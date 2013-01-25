@@ -46,4 +46,14 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:req];
 }
+
+// ページ読込開始時にインジケータをくるくるさせる
+-(void)webViewDidStartLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+// ページ読込完了時にインジケータを非表示にする
+-(void)webViewDidFinishLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
 @end

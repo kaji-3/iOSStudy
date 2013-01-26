@@ -2,7 +2,7 @@
 //  SortListController.m
 //  MovieReview
 //
-//  Created by y_kajikawa on 13/01/25.
+//  Created by y_kajikawa on 13/01/26.
 //  Copyright (c) 2013年 y_kajikawa. All rights reserved.
 //
 
@@ -35,4 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
 @end

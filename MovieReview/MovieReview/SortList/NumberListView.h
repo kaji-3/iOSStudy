@@ -1,5 +1,5 @@
 //
-//  SortListController.h
+//  NumberListView.h
 //  MovieReview
 //
 //  Created by y_kajikawa on 13/01/26.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SortListController : UIViewController
+@interface NumberListView : UIView
 
 @end

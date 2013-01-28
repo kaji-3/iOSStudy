@@ -55,11 +55,9 @@
     UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"Cell"
                                                                                 forIndexPath:indexPath];
     
-    
-    //NSArray* views = cell.subviews;
-    //UILabel* numberLabel = [views objectAtIndex:0];
-    //NSString* numberString = numberLabel.text;
-    
+    UILabel* numberLabel = (UILabel*)[cell viewWithTag:23];
+    NSUInteger index = (NSUInteger)indexPath.row;
+    numberLabel.text = [self.photos objectAtIndex:index];
     //NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     //[f setNumberStyle:NSNumberFormatterDecimalStyle];
     //NSNumber * myNumber = [f numberFromString:numberString];

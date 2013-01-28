@@ -36,7 +36,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 // セクションの数を返す
@@ -73,6 +72,7 @@
     self.sortTargetNumbers = [NSMutableArray array];
     self.sortedNumbers = [NSMutableArray array];
 
+    srand(time(nil));
     for(int i = 0; i < DATA_SOURCE_COUNT; i++){
         //FIX: ランダムな値の範囲定数化
         [self.sortTargetNumbers addObject:[NSNumber numberWithShort:rand()%100]];
@@ -82,9 +82,21 @@
 // 表示する対象をソートする
 - (void)sortInteger
 {
+ 
+    int nowLargestNumber = 0;
+    int nowLargestNumberIndex = -1;
+    int nowNumberIndex = 0;
+    for (NSNumber *target in self.sortTargetNumbers) {
+        NSLog([target stringValue]);
+        if (nowLargestNumber >= [target intValue]) {
+            nowLargestNumber = [target intValue];
+            nowLargestNumberIndex = nowNumberIndex;
+        }
+        nowNumberIndex++;
+    }
     
     for (NSNumber *target in self.sortTargetNumbers) {
-        
+        NSLog([target stringValue]);
     }
 }
 

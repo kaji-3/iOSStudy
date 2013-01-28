@@ -10,7 +10,7 @@
 
 @interface NumberCollectionViewController ()
 
-@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSArray *photos;
 
 @end
@@ -28,8 +28,12 @@
 
 - (void)viewDidLoad
 {
-    self.titles = [[NSArray alloc] initWithObjects:@"東京", @"名古屋", @"大阪", nil];
+    //self.titles = [NSMutableArray arrayWithObjects:@"東京", @"名古屋", @"大阪", nil];
+    self.titles = [NSMutableArray array];
+    
     self.photos = [[NSArray alloc] initWithObjects:@"東京", @"名古屋", @"大阪", nil];
+    [self initDatasource];
+    [self sortInteger];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -46,7 +50,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
                             (NSInteger)section {
-    return [self.photos count];
+    return [self.titles count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -57,16 +61,25 @@
     
     UILabel* numberLabel = (UILabel*)[cell viewWithTag:23];
     NSUInteger index = (NSUInteger)indexPath.row;
-    numberLabel.text = [self.photos objectAtIndex:index];
-    //NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    //[f setNumberStyle:NSNumberFormatterDecimalStyle];
-    //NSNumber * myNumber = [f numberFromString:numberString];
-    //[f release];
+    numberLabel.text = [[self.titles objectAtIndex:index] stringValue];
     
-    
-    
+        
     cell.backgroundColor = [UIColor whiteColor];
     return cell;
+}
+
+- (void)initDatasource{
+    int dataSourceCount = 15;
+    
+    for(int i=0; i<dataSourceCount; i++){
+        // 処理
+        [self.titles addObject:[NSNumber numberWithShort:rand()%100]];
+    }
+}
+
+- (void)sortInteger
+{
+    int i = 1;
 }
 
 @end

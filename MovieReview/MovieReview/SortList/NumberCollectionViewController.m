@@ -10,6 +10,9 @@
 
 @interface NumberCollectionViewController ()
 
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *photos;
+
 @end
 
 @implementation NumberCollectionViewController
@@ -25,6 +28,8 @@
 
 - (void)viewDidLoad
 {
+    self.titles = [[NSArray alloc] initWithObjects:@"東京", @"名古屋", @"大阪", nil];
+    self.photos = [[NSArray alloc] initWithObjects:@"東京", @"名古屋", @"大阪", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -35,16 +40,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView
-     numberOfItemsInSection:(NSInteger)section
-{
-    //return datas.count;
-    return 10;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
+                            (NSInteger)section {
+    return [self.photos count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -52,7 +54,20 @@
 {
     UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"Cell"
                                                                                 forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor greenColor];
+    
+    
+    //NSArray* views = cell.subviews;
+    //UILabel* numberLabel = [views objectAtIndex:0];
+    //NSString* numberString = numberLabel.text;
+    
+    //NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+    //[f setNumberStyle:NSNumberFormatterDecimalStyle];
+    //NSNumber * myNumber = [f numberFromString:numberString];
+    //[f release];
+    
+    
+    
+    cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
 

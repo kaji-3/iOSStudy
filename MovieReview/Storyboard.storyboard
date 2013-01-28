@@ -105,8 +105,22 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="NumberLabel" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nB-Td-EgQ">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="UWD-u6-Tq3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="1nB-Td-EgQ" firstAttribute="trailing" secondItem="QkI-fk-FYu" secondAttribute="trailing" type="default" id="ar2-50-LBr"/>
+                                    <constraint firstItem="1nB-Td-EgQ" firstAttribute="top" secondItem="QkI-fk-FYu" secondAttribute="top" constant="14" id="qZA-Gv-fLZ"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>

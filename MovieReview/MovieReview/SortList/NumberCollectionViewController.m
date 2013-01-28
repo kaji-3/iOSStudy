@@ -10,8 +10,7 @@
 
 @interface NumberCollectionViewController ()
 
-@property (nonatomic, strong) NSMutableArray *titles;
-@property (nonatomic, strong) NSArray *photos;
+@property (nonatomic, strong) NSMutableArray *sortTargetNumbers;
 
 @end
 
@@ -28,14 +27,10 @@
 
 - (void)viewDidLoad
 {
-    //self.titles = [NSMutableArray arrayWithObjects:@"東京", @"名古屋", @"大阪", nil];
-    self.titles = [NSMutableArray array];
-    
-    self.photos = [[NSArray alloc] initWithObjects:@"東京", @"名古屋", @"大阪", nil];
+    self.sortTargetNumbers = [NSMutableArray array];
     [self initDatasource];
     [self sortInteger];
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,15 +39,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+// セクションの数を返す
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
+// Viewに表示するセルの数を返す
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
                             (NSInteger)section {
-    return [self.titles count];
+    return [self.sortTargetNumbers count];
 }
 
+// 各セルを描画する度に呼ばれ、描画するセルを返す
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -61,22 +59,23 @@
     
     UILabel* numberLabel = (UILabel*)[cell viewWithTag:23];
     NSUInteger index = (NSUInteger)indexPath.row;
-    numberLabel.text = [[self.titles objectAtIndex:index] stringValue];
+    numberLabel.text = [[self.sortTargetNumbers objectAtIndex:index] stringValue];
     
         
     cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
 
+// セルの要素の初期化を行う
 - (void)initDatasource{
-    int dataSourceCount = 15;
+    const int DATA_SOURCE_COUNT = 15;
     
-    for(int i=0; i<dataSourceCount; i++){
-        // 処理
-        [self.titles addObject:[NSNumber numberWithShort:rand()%100]];
+    for(int i = 0; i < DATA_SOURCE_COUNT; i++){
+        [self.sortTargetNumbers addObject:[NSNumber numberWithShort:rand()%100]];
     }
 }
 
+// 表示する対象をソートする
 - (void)sortInteger
 {
     int i = 1;

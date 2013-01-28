@@ -11,6 +11,7 @@
 @interface NumberCollectionViewController ()
 
 @property (nonatomic, strong) NSMutableArray *sortTargetNumbers;
+@property (nonatomic, strong) NSMutableArray *sortedNumbers;
 
 @end
 
@@ -27,7 +28,6 @@
 
 - (void)viewDidLoad
 {
-    self.sortTargetNumbers = [NSMutableArray array];
     [self initDatasource];
     [self sortInteger];
     [super viewDidLoad];
@@ -66,11 +66,15 @@
     return cell;
 }
 
-// セルの要素の初期化を行う
+// セルに表示するデータの初期化を行う
 - (void)initDatasource{
     const int DATA_SOURCE_COUNT = 15;
-    
+
+    self.sortTargetNumbers = [NSMutableArray array];
+    self.sortedNumbers = [NSMutableArray array];
+
     for(int i = 0; i < DATA_SOURCE_COUNT; i++){
+        //FIX: ランダムな値の範囲定数化
         [self.sortTargetNumbers addObject:[NSNumber numberWithShort:rand()%100]];
     }
 }
@@ -78,7 +82,10 @@
 // 表示する対象をソートする
 - (void)sortInteger
 {
-    int i = 1;
+    
+    for (NSNumber *target in self.sortTargetNumbers) {
+        
+    }
 }
 
 @end

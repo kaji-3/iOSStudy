@@ -43,7 +43,7 @@
     return 1;
 }
 
-// Viewに表示するセルの数を返す
+// 画面描画時に呼ばれ、Viewに表示するセルの数を返す
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
                             (NSInteger)section {
     return [self.sortTargetNumbers count];
@@ -82,21 +82,36 @@
 // 表示する対象をソートする
 - (void)sortInteger
 {
- 
+    // sort用作業変数
     int nowLargestNumber = 0;
     int nowLargestNumberIndex = -1;
-    int nowNumberIndex = 0;
-    for (NSNumber *target in self.sortTargetNumbers) {
-        NSLog([target stringValue]);
-        if (nowLargestNumber >= [target intValue]) {
-            nowLargestNumber = [target intValue];
-            nowLargestNumberIndex = nowNumberIndex;
-        }
-        nowNumberIndex++;
-    }
     
-    for (NSNumber *target in self.sortTargetNumbers) {
-        NSLog([target stringValue]);
+    while ([self.sortTargetNumbers count] != 0){
+        
+        NSNumber *sortTarget = (NSNumber*) [self.sortTargetNumbers objectAtIndex:0];
+        nowLargestNumber = [sortTarget intValue];
+        nowLargestNumberIndex = 0;
+                
+        for (int nowNumberIndex = 0; nowNumberIndex < [self.sortTargetNumbers count]; nowNumberIndex++) {
+            
+            NSNumber *compareTarget = (NSNumber*) [self.sortTargetNumbers objectAtIndex:nowNumberIndex];
+            
+            //FIXIT: デバッグログ
+            NSLog([NSString stringWithFormat:@"%@ %@ %d",@"compareTarget",[compareTarget stringValue],nowLargestNumber]);
+
+            if (nowLargestNumber <= [compareTarget intValue]) {
+                nowLargestNumber = [compareTarget intValue];
+                nowLargestNumberIndex = nowNumberIndex;
+            }
+        }
+        
+        // 最大値の元配列からの削除と表示用配列への追加
+        [self.sortTargetNumbers removeObjectAtIndex:nowLargestNumberIndex];
+        [self.sortedNumbers addObject:[NSNumber numberWithShort:nowLargestNumber]];
+        
+        //FIXIT: デバッグログ
+        //NSLog(nowLargestNumber);
+        
     }
 }
 

@@ -46,7 +46,7 @@
 // 画面描画時に呼ばれ、Viewに表示するセルの数を返す
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
                             (NSInteger)section {
-    return [self.sortTargetNumbers count];
+    return [self.sortedNumbers count];
 }
 
 // 各セルを描画する度に呼ばれ、描画するセルを返す
@@ -58,7 +58,7 @@
     
     UILabel* numberLabel = (UILabel*)[cell viewWithTag:23];
     NSUInteger index = (NSUInteger)indexPath.row;
-    numberLabel.text = [[self.sortTargetNumbers objectAtIndex:index] stringValue];
+    numberLabel.text = [[self.sortedNumbers objectAtIndex:index] stringValue];
     
         
     cell.backgroundColor = [UIColor whiteColor];

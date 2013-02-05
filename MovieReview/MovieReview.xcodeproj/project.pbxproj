@@ -32,6 +32,7 @@
 		C7B8425316B43E4D00971ED6 /* NumberCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B8425216B43E4D00971ED6 /* NumberCollectionViewController.m */; };
 		C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DB4BD916C141F300CB1370 /* MapController.m */; };
 		C7DB4BDD16C143D700CB1370 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DB4BDC16C143D700CB1370 /* MapKit.framework */; };
+		C7F34FE516C14C69003BBE45 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F34FE416C14C69003BBE45 /* CoreLocation.framework */; };
 		C7FB9FFC16B045F500F4E7A1 /* MenuTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		C7DB4BD816C141F300CB1370 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapController.h; path = Map/MapController.h; sourceTree = "<group>"; };
 		C7DB4BD916C141F300CB1370 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapController.m; path = Map/MapController.m; sourceTree = "<group>"; };
 		C7DB4BDC16C143D700CB1370 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C7F34FE416C14C69003BBE45 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C7FB9FFA16B045F500F4E7A1 /* MenuTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTabBar.h; sourceTree = "<group>"; };
 		C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F34FE516C14C69003BBE45 /* CoreLocation.framework in Frameworks */,
 				C7DB4BDD16C143D700CB1370 /* MapKit.framework in Frameworks */,
 				C7874C7916AC7DC7008852FD /* UIKit.framework in Frameworks */,
 				C7874C7B16AC7DC7008852FD /* Foundation.framework in Frameworks */,
@@ -111,6 +114,7 @@
 		C7874C6916AC7DC7008852FD = {
 			isa = PBXGroup;
 			children = (
+				C7F34FE416C14C69003BBE45 /* CoreLocation.framework */,
 				C7DB4BDC16C143D700CB1370 /* MapKit.framework */,
 				C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */,
 				C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */,

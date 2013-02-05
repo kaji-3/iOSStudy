@@ -30,6 +30,8 @@
 		C7874C9F16AC7FAA008852FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C7874C9B16AC7F0B008852FD /* Default.png */; };
 		C78FF3E216B21BF200D54208 /* WebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78FF3E116B21BF200D54208 /* WebBrowserController.m */; };
 		C7B8425316B43E4D00971ED6 /* NumberCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B8425216B43E4D00971ED6 /* NumberCollectionViewController.m */; };
+		C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DB4BD916C141F300CB1370 /* MapController.m */; };
+		C7DB4BDD16C143D700CB1370 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DB4BDC16C143D700CB1370 /* MapKit.framework */; };
 		C7FB9FFC16B045F500F4E7A1 /* MenuTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		C78FF3E116B21BF200D54208 /* WebBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebBrowserController.m; path = WebBrowser/WebBrowserController.m; sourceTree = "<group>"; };
 		C7B8425116B43E4D00971ED6 /* NumberCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberCollectionViewController.h; path = SortList/NumberCollectionViewController.h; sourceTree = "<group>"; };
 		C7B8425216B43E4D00971ED6 /* NumberCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NumberCollectionViewController.m; path = SortList/NumberCollectionViewController.m; sourceTree = "<group>"; };
+		C7DB4BD816C141F300CB1370 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapController.h; path = Map/MapController.h; sourceTree = "<group>"; };
+		C7DB4BD916C141F300CB1370 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapController.m; path = Map/MapController.m; sourceTree = "<group>"; };
+		C7DB4BDC16C143D700CB1370 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C7FB9FFA16B045F500F4E7A1 /* MenuTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTabBar.h; sourceTree = "<group>"; };
 		C7FB9FFB16B045F500F4E7A1 /* MenuTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DB4BDD16C143D700CB1370 /* MapKit.framework in Frameworks */,
 				C7874C7916AC7DC7008852FD /* UIKit.framework in Frameworks */,
 				C7874C7B16AC7DC7008852FD /* Foundation.framework in Frameworks */,
 				C7874C7D16AC7DC7008852FD /* CoreGraphics.framework in Frameworks */,
@@ -105,6 +111,7 @@
 		C7874C6916AC7DC7008852FD = {
 			isa = PBXGroup;
 			children = (
+				C7DB4BDC16C143D700CB1370 /* MapKit.framework */,
 				C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */,
 				C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */,
 				C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */,
@@ -151,6 +158,8 @@
 				C7874C8816AC7DC7008852FD /* AppDelegate.m */,
 				C7874C7F16AC7DC7008852FD /* Supporting Files */,
 				C78FF3D916B21AD800D54208 /* Menu */,
+				C7DB4BD816C141F300CB1370 /* MapController.h */,
+				C7DB4BD916C141F300CB1370 /* MapController.m */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 				C7FB9FFC16B045F500F4E7A1 /* MenuTabBar.m in Sources */,
 				C78FF3E216B21BF200D54208 /* WebBrowserController.m in Sources */,
 				C7B8425316B43E4D00971ED6 /* NumberCollectionViewController.m in Sources */,
+				C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

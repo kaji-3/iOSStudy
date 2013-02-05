@@ -13,6 +13,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *TxtUserID;
 
 @property (retain, nonatomic) IBOutlet UITextField *TxtPassword;
+@property (retain, nonatomic) IBOutlet UILabel *LblUserIdValidateResult;
 
 - (IBAction)closeKeyBoard:(id)sender;
 

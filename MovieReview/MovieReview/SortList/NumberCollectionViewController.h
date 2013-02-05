@@ -10,4 +10,6 @@
 
 @interface NumberCollectionViewController : UICollectionViewController
 
+@property (retain, nonatomic) IBOutlet UICollectionView *shuffleButton;
+
 @end

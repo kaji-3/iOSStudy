@@ -43,6 +43,21 @@
     return 1;
 }
 
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *header = nil;
+    
+    if ([kind isEqual:UICollectionElementKindSectionHeader])
+    {
+        header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                    withReuseIdentifier:@"MyHeader"
+                                                           forIndexPath:indexPath];
+        
+        //header.headerLabel.text = @"Car Image Gallery";
+    }
+    return header;
+}
+
 // 画面描画時に呼ばれ、Viewに表示するセルの数を返す
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:
                             (NSInteger)section {
@@ -115,4 +130,18 @@
     }
 }
 
+
+- (IBAction)shuffleButton_TouchDown:(id)sender {
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"完了しました"
+                              delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+    [alert show];
+
+}
+
+
+- (void)dealloc {
+    [_shuffleButton release];
+    [super dealloc];
+}
 @end

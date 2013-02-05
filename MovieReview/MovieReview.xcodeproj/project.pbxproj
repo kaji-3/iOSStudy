@@ -10,6 +10,7 @@
 		C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFDF16AC860600697898 /* Storyboard.storyboard */; };
 		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
 		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
+		C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */; };
 		C787273016AC90B500EF6A01 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */; };
 		C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */; };
 		C787273516AC90C100EF6A01 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */; };
@@ -41,6 +42,8 @@
 		C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		C72BFFE716AC8ADB00697898 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
 		C72BFFE816AC8ADB00697898 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		C782BCD616C15E0A000002F7 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAnnotation.h; path = Map/SimpleAnnotation.h; sourceTree = "<group>"; };
+		C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAnnotation.m; path = Map/SimpleAnnotation.m; sourceTree = "<group>"; };
 		C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		C787273416AC90C100EF6A01 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
@@ -162,8 +165,7 @@
 				C7874C8816AC7DC7008852FD /* AppDelegate.m */,
 				C7874C7F16AC7DC7008852FD /* Supporting Files */,
 				C78FF3D916B21AD800D54208 /* Menu */,
-				C7DB4BD816C141F300CB1370 /* MapController.h */,
-				C7DB4BD916C141F300CB1370 /* MapController.m */,
+				C7F34FE716C158BA003BBE45 /* Map */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -207,6 +209,17 @@
 				C78FF3E116B21BF200D54208 /* WebBrowserController.m */,
 			);
 			name = WebBrowser;
+			sourceTree = "<group>";
+		};
+		C7F34FE716C158BA003BBE45 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C7DB4BD816C141F300CB1370 /* MapController.h */,
+				C7DB4BD916C141F300CB1370 /* MapController.m */,
+				C782BCD616C15E0A000002F7 /* SimpleAnnotation.h */,
+				C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +305,7 @@
 				C78FF3E216B21BF200D54208 /* WebBrowserController.m in Sources */,
 				C7B8425316B43E4D00971ED6 /* NumberCollectionViewController.m in Sources */,
 				C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */,
+				C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

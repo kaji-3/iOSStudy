@@ -10,4 +10,14 @@
 
 @interface HatenaBookmarkDetailViewController : UITableViewController
 
+// タイトル
+@property (nonatomic, strong) NSString *title;
+
+// ブックマーク数
+@property (nonatomic, strong) NSString *count;
+
+// ブックマークURL
+@property (nonatomic, strong) NSString *url;
+
+
 @end

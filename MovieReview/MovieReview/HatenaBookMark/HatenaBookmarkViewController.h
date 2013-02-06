@@ -12,6 +12,10 @@
     
 }
 
+// 表示用データ・ソース
 @property (nonatomic, strong) NSMutableArray *bookMarks;
+
+// クリックしたテーブルのID
+@property  (nonatomic, strong) NSIndexPath *nowIndexPath;
 
 @end

@@ -15,7 +15,12 @@
 
 @implementation HatenaBookmarkViewController
 
+// テーブルのデータ・ソース
 @synthesize bookMarks;
+
+@synthesize nowIndexPath;
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -136,7 +141,23 @@
 
     //[self.navigationController pushViewController:detailViewController animated:YES];
     //[detailViewController release];
-     
+    self.nowIndexPath = indexPath;
+}
+
+#pragma seque
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // サブ画面のビューコントローラを取得
+    HatenaBookmarkDetailViewController *destViewController = (HatenaBookmarkDetailViewController *)[segue destinationViewController];
+    
+    NSDictionary *bookMark = [self.bookMarks objectAtIndex:nowIndexPath.row];
+    
+    // サブ画面のmsgValueプロパティに文字列を代入
+    destViewController.title = [bookMark objectForKey:@"title"];
+    destViewController.count = [bookMark objectForKey:@"count"];
+    destViewController.url = [bookMark objectForKey:@"url"];
+
 }
 
 @end

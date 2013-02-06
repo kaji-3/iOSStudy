@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HatenaBookmarkViewController : UITableViewController{
-    NSMutableArray *bookMarks;
+    
 }
+
+@property (nonatomic, strong) NSMutableArray *bookMarks;
 
 @end

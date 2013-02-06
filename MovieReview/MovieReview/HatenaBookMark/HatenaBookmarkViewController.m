@@ -14,6 +14,8 @@
 
 @implementation HatenaBookmarkViewController
 
+@synthesize bookMarks;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -54,7 +56,7 @@
         
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         
-        bookMarks = [jsonDictionary objectForKey:@"related"];
+        self.bookMarks = [jsonDictionary objectForKey:@"related"];
         
         [self.tableView reloadData];
 
@@ -78,7 +80,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSLog(@"index: %d", indexPath.row);
-    NSDictionary *bookMark = [bookMarks objectAtIndex:indexPath.row];
+    NSDictionary *bookMark = [self.bookMarks objectAtIndex:indexPath.row];
     cell.textLabel.text = [bookMark objectForKey:@"title"];
     NSLog(@"item count: %d", [bookMark count]);   
     return cell;

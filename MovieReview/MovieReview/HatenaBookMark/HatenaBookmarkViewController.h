@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HatenaBookmarkViewController : UITableViewController
+@interface HatenaBookmarkViewController : UITableViewController{
+    NSMutableArray *bookMarks;
+}
 
 @end

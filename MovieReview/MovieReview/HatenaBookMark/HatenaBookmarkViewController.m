@@ -26,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    bookMarks = [NSArray array];
+    
+    [self getBookmark];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -42,18 +46,30 @@
 
 #pragma mark - Table view data source
 
+- (void) getBookmark {
+    NSURL *url = [NSURL URLWithString:@"http://b.hatena.ne.jp/entry/json/http://www.hatena.ne.jp/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        
+        NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        
+        bookMarks = [jsonDictionary objectForKey:@"related"];
+        
+        [self.tableView reloadData];
+
+    }];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    // セクション数は１
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [bookMarks count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,8 +77,10 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    NSLog(@"index: %d", indexPath.row);
+    NSDictionary *bookMark = [bookMarks objectAtIndex:indexPath.row];
+    cell.textLabel.text = [bookMark objectForKey:@"title"];
+    NSLog(@"item count: %d", [bookMark count]);   
     return cell;
 }
 

@@ -130,12 +130,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-     HatenaBookmarkDetailViewController *detailViewController = [[HatenaBookmarkDetailViewController alloc] initWithNibName:@"HatenaBookmarkDetailViewController" bundle:nil];
+    //HatenaBookmarkDetailViewController *detailViewController = [[HatenaBookmarkDetailViewController alloc] initWithNibName:@"HatenaBookmarkDetailViewController" bundle:nil];
 
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
+    //[self.navigationController pushViewController:detailViewController animated:YES];
+    //[detailViewController release];
      
 }
 

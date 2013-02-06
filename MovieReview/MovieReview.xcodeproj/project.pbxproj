@@ -10,6 +10,7 @@
 		C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFDF16AC860600697898 /* Storyboard.storyboard */; };
 		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
 		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
+		C764C98B16C2C01000745911 /* HatenaBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */; };
 		C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */; };
 		C787273016AC90B500EF6A01 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */; };
 		C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */; };
@@ -42,6 +43,8 @@
 		C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		C72BFFE716AC8ADB00697898 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
 		C72BFFE816AC8ADB00697898 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		C764C98916C2C01000745911 /* HatenaBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HatenaBookmarkViewController.h; path = HatenaBookMark/HatenaBookmarkViewController.h; sourceTree = "<group>"; };
+		C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HatenaBookmarkViewController.m; path = HatenaBookMark/HatenaBookmarkViewController.m; sourceTree = "<group>"; };
 		C782BCD616C15E0A000002F7 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAnnotation.h; path = Map/SimpleAnnotation.h; sourceTree = "<group>"; };
 		C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAnnotation.m; path = Map/SimpleAnnotation.m; sourceTree = "<group>"; };
 		C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -96,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C764C98D16C2C01B00745911 /* HatenaBookmark */ = {
+			isa = PBXGroup;
+			children = (
+				C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */,
+				C764C98916C2C01000745911 /* HatenaBookmarkViewController.h */,
+			);
+			name = HatenaBookmark;
+			sourceTree = "<group>";
+		};
 		C787273E16AC951B00EF6A01 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 				C7874C7F16AC7DC7008852FD /* Supporting Files */,
 				C78FF3D916B21AD800D54208 /* Menu */,
 				C7F34FE716C158BA003BBE45 /* Map */,
+				C764C98D16C2C01B00745911 /* HatenaBookmark */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -306,6 +319,7 @@
 				C7B8425316B43E4D00971ED6 /* NumberCollectionViewController.m in Sources */,
 				C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */,
 				C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */,
+				C764C98B16C2C01000745911 /* HatenaBookmarkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

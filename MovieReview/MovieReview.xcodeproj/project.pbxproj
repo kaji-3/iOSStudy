@@ -11,6 +11,8 @@
 		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
 		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
 		C764C98B16C2C01000745911 /* HatenaBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */; };
+		C764C99916C2F21100745911 /* HatenaBookmarkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C764C99716C2F21100745911 /* HatenaBookmarkDetailViewController.m */; };
+		C764C99A16C2F21100745911 /* HatenaBookmarkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C764C99816C2F21100745911 /* HatenaBookmarkDetailViewController.xib */; };
 		C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */; };
 		C787273016AC90B500EF6A01 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */; };
 		C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */; };
@@ -45,6 +47,9 @@
 		C72BFFE816AC8ADB00697898 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
 		C764C98916C2C01000745911 /* HatenaBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HatenaBookmarkViewController.h; path = HatenaBookMark/HatenaBookmarkViewController.h; sourceTree = "<group>"; };
 		C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HatenaBookmarkViewController.m; path = HatenaBookMark/HatenaBookmarkViewController.m; sourceTree = "<group>"; };
+		C764C99616C2F21100745911 /* HatenaBookmarkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HatenaBookmarkDetailViewController.h; path = HatenaBookMark/HatenaBookmarkDetailViewController.h; sourceTree = "<group>"; };
+		C764C99716C2F21100745911 /* HatenaBookmarkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HatenaBookmarkDetailViewController.m; path = HatenaBookMark/HatenaBookmarkDetailViewController.m; sourceTree = "<group>"; };
+		C764C99816C2F21100745911 /* HatenaBookmarkDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HatenaBookmarkDetailViewController.xib; path = HatenaBookMark/HatenaBookmarkDetailViewController.xib; sourceTree = "<group>"; };
 		C782BCD616C15E0A000002F7 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAnnotation.h; path = Map/SimpleAnnotation.h; sourceTree = "<group>"; };
 		C782BCD716C15E0A000002F7 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAnnotation.m; path = Map/SimpleAnnotation.m; sourceTree = "<group>"; };
 		C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 			children = (
 				C764C98A16C2C01000745911 /* HatenaBookmarkViewController.m */,
 				C764C98916C2C01000745911 /* HatenaBookmarkViewController.h */,
+				C764C99616C2F21100745911 /* HatenaBookmarkDetailViewController.h */,
+				C764C99716C2F21100745911 /* HatenaBookmarkDetailViewController.m */,
+				C764C99816C2F21100745911 /* HatenaBookmarkDetailViewController.xib */,
 			);
 			name = HatenaBookmark;
 			sourceTree = "<group>";
@@ -300,6 +308,7 @@
 				C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */,
 				C787273516AC90C100EF6A01 /* Default-Portrait~ipad.png in Resources */,
 				C787273716AC90C500EF6A01 /* Default-Landscape@2x~ipad.png in Resources */,
+				C764C99A16C2F21100745911 /* HatenaBookmarkDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,7 @@
 				C7DB4BDA16C141F300CB1370 /* MapController.m in Sources */,
 				C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */,
 				C764C98B16C2C01000745911 /* HatenaBookmarkViewController.m in Sources */,
+				C764C99916C2F21100745911 /* HatenaBookmarkDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

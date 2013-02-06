@@ -1,21 +1,18 @@
 //
-//  HatenaBookmarkViewController.m
+//  HatenaBookmarkDetailViewController.m
 //  MovieReview
 //
 //  Created by y_kajikawa on 13/02/07.
 //  Copyright (c) 2013年 y_kajikawa. All rights reserved.
 //
 
-#import "HatenaBookmarkViewController.h"
 #import "HatenaBookmarkDetailViewController.h"
 
-@interface HatenaBookmarkViewController ()
+@interface HatenaBookmarkDetailViewController ()
 
 @end
 
-@implementation HatenaBookmarkViewController
-
-@synthesize bookMarks;
+@implementation HatenaBookmarkDetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,10 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    bookMarks = [NSArray array];
-    
-    [self getBookmark];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -49,41 +42,30 @@
 
 #pragma mark - Table view data source
 
-- (void) getBookmark {
-    NSURL *url = [NSURL URLWithString:@"http://b.hatena.ne.jp/entry/json/http://www.hatena.ne.jp/"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-        
-        NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        
-        self.bookMarks = [jsonDictionary objectForKey:@"related"];
-        
-        [self.tableView reloadData];
-
-    }];
-}
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // セクション数は１
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [bookMarks count];
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
     
-    NSLog(@"index: %d", indexPath.row);
-    NSDictionary *bookMark = [self.bookMarks objectAtIndex:indexPath.row];
-    cell.textLabel.text = [bookMark objectForKey:@"title"];
-    NSLog(@"item count: %d", [bookMark count]);   
+    // Configure the cell...
+    
     return cell;
 }
 
@@ -130,15 +112,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-     HatenaBookmarkDetailViewController *detailViewController = [[HatenaBookmarkDetailViewController alloc] initWithNibName:@"HatenaBookmarkDetailViewController" bundle:nil];
-
-    // 
-    //[self.navigationController pushViewController:detailViewController animated:YES];
-    [self presentModalViewController:detailViewController animated:YES];
-    [detailViewController release];
-     
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+     */
 }
 
 @end

@@ -135,13 +135,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    //HatenaBookmarkDetailViewController *detailViewController = [[HatenaBookmarkDetailViewController alloc] initWithNibName:@"HatenaBookmarkDetailViewController" bundle:nil];
-
-    //[self.navigationController pushViewController:detailViewController animated:YES];
-    //[detailViewController release];
-    self.nowIndexPath = indexPath;
+    // seque はstoryboradで実施する
 }
 
 #pragma seque
@@ -151,7 +145,8 @@
     // サブ画面のビューコントローラを取得
     HatenaBookmarkDetailViewController *destViewController = (HatenaBookmarkDetailViewController *)[segue destinationViewController];
     
-    NSDictionary *bookMark = [self.bookMarks objectAtIndex:nowIndexPath.row];
+    
+    NSDictionary *bookMark = [self.bookMarks objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     
     // サブ画面のmsgValueプロパティに文字列を代入
     destViewController.title = [bookMark objectForKey:@"title"];

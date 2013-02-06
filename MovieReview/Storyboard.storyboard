@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hO-YH-CKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="1347"/>
+            <point key="canvasLocation" x="1202" y="1507"/>
         </scene>
         <!--Number Collection View Controller - Sort-->
         <scene sceneID="lWC-N0-4qm">
@@ -224,18 +224,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZW-ZO-Nbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="628"/>
+            <point key="canvasLocation" x="1208" y="812"/>
         </scene>
-        <!--Hatena Bookmark View Controller - hatena:b-->
-        <scene sceneID="qRY-cJ-3qv">
+        <!--Hatena Bookmark View Controller - Root View Controller-->
+        <scene sceneID="9Fu-P7-T3m">
             <objects>
-                <tableViewController id="ddf-y1-7ys" customClass="HatenaBookmarkViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q0J-pL-Bie">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                <tableViewController id="YNZ-3q-Gbz" customClass="HatenaBookmarkViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="73g-zW-1Yt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="QKf-3A-Ajq">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="KxB-Xk-bHD">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -245,16 +245,28 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ddf-y1-7ys" id="DK1-sM-gSG"/>
-                            <outlet property="delegate" destination="ddf-y1-7ys" id="IW4-66-FHO"/>
-                        </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="hatena:b" id="7LQ-En-ati"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="OP9-FQ-2Xj"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LTF-Du-ubO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOV-GR-ZbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216" y="-252"/>
+            <point key="canvasLocation" x="1760" y="-235"/>
+        </scene>
+        <!--Navigation Controller - hatena:b-->
+        <scene sceneID="T9G-qy-eEh">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="4Ys-M0-OXl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="hatena:b" id="flo-sc-Wlw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x39-U4-1g3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YNZ-3q-Gbz" kind="relationship" relationship="rootViewController" id="ThG-tQ-3wS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evL-ke-mXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="-241"/>
         </scene>
         <!--About - about-->
         <scene sceneID="8xj-ZF-F0O">
@@ -296,10 +308,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ddf-y1-7ys" kind="relationship" relationship="viewControllers" id="LBZ-tQ-045"/>
                         <segue destination="cRc-jR-a2l" kind="relationship" relationship="viewControllers" id="hfb-ji-iR7"/>
                         <segue destination="MNX-XW-uSS" kind="relationship" relationship="viewControllers" id="uug-wd-nNb"/>
                         <segue destination="yB1-Xk-AnB" kind="relationship" relationship="viewControllers" id="3rd-eq-JIE"/>
+                        <segue destination="4Ys-M0-OXl" kind="relationship" relationship="viewControllers" id="Bt0-hL-rnB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lT4-na-UHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,6 +319,58 @@
             <point key="canvasLocation" x="658" y="41"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="About" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/About.h"/>
+        </class>
+        <class className="HatenaBookmarkViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HatenaBookmarkViewController.h"/>
+        </class>
+        <class className="LoginController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginController.h"/>
+            <relationships>
+                <relationship kind="action" name="TxtUserId_EditingChenged:"/>
+                <relationship kind="action" name="closeKeyBoard:"/>
+                <relationship kind="outlet" name="LblUserIdValidateResult" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="TxtPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="TxtUserID" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MapController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NumberCollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberCollectionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="shuffleButton_TouchDown:"/>
+                <relationship kind="outlet" name="shuffleButton" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="WebBrowserController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebBrowserController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

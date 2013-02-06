@@ -134,9 +134,7 @@
     
      HatenaBookmarkDetailViewController *detailViewController = [[HatenaBookmarkDetailViewController alloc] initWithNibName:@"HatenaBookmarkDetailViewController" bundle:nil];
 
-    // 
-    //[self.navigationController pushViewController:detailViewController animated:YES];
-    [self presentModalViewController:detailViewController animated:YES];
+    [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
      
 }

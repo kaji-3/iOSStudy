@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HatenaBookmarkViewController : UITableViewController{
+    IBOutlet UIView *tableHeaderView;
     
 }
 

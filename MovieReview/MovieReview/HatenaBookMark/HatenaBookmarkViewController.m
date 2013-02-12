@@ -21,7 +21,6 @@
 @synthesize nowIndexPath;
 
 
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -38,7 +37,8 @@
     bookMarks = [NSArray array];
     
     [self getBookmark];
-
+    
+    self.tableView.tableHeaderView = tableHeaderView;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

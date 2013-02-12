@@ -235,11 +235,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="KxB-Xk-bHD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="KxB-Xk-bHD">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -250,8 +250,27 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="OP9-FQ-2Xj"/>
+                    <connections>
+                        <outlet property="tableHeaderView" destination="42A-Oi-gGC" id="5L9-lg-qdo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOV-GR-ZbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="42A-Oi-gGC">
+                    <rect key="frame" x="0.0" y="415" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f49-VI-Gz6">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="f49-VI-Gz6" firstAttribute="trailing" secondItem="42A-Oi-gGC" secondAttribute="trailing" type="default" id="A9F-Cw-1Sf"/>
+                        <constraint firstItem="f49-VI-Gz6" firstAttribute="top" secondItem="42A-Oi-gGC" secondAttribute="top" constant="5" id="HKQ-X4-x9b"/>
+                        <constraint firstItem="f49-VI-Gz6" firstAttribute="leading" secondItem="42A-Oi-gGC" secondAttribute="leading" type="default" id="X8Z-1X-Jjs"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="1760" y="-235"/>
         </scene>
@@ -361,6 +380,9 @@
         </class>
         <class className="HatenaBookmarkViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HatenaBookmarkViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableHeaderView" candidateClass="UIView"/>
+            </relationships>
         </class>
         <class className="LoginController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginController.h"/>

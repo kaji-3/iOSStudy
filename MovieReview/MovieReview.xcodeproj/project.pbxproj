@@ -11,6 +11,9 @@
 		C70642F316D11C8A00474457 /* arrow_left_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F216D11C8A00474457 /* arrow_left_24.png */; };
 		C70642F516D11C9500474457 /* arrow_right_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F416D11C9500474457 /* arrow_right_24.png */; };
 		C70642F716D1214300474457 /* arrow_circle_right_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F616D1214300474457 /* arrow_circle_right_24.png */; };
+		C706430316D12A3800474457 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C706430016D12A3800474457 /* SVProgressHUD.bundle */; };
+		C706430416D12A3800474457 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C706430216D12A3800474457 /* SVProgressHUD.m */; };
+		C706430816D12C2900474457 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C706430716D12C2900474457 /* QuartzCore.framework */; };
 		C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFDF16AC860600697898 /* Storyboard.storyboard */; };
 		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
 		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
@@ -48,6 +51,10 @@
 		C70642F216D11C8A00474457 /* arrow_left_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_left_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_left_24.png"; sourceTree = "<group>"; };
 		C70642F416D11C9500474457 /* arrow_right_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_right_24.png"; sourceTree = "<group>"; };
 		C70642F616D1214300474457 /* arrow_circle_right_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_circle_right_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_circle_right_24.png"; sourceTree = "<group>"; };
+		C706430016D12A3800474457 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = MovieReview/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		C706430116D12A3800474457 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = MovieReview/SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		C706430216D12A3800474457 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = MovieReview/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		C706430716D12C2900474457 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C72BFFDF16AC860600697898 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		C72BFFE716AC8ADB00697898 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
@@ -99,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C706430816D12C2900474457 /* QuartzCore.framework in Frameworks */,
 				C7F34FE516C14C69003BBE45 /* CoreLocation.framework in Frameworks */,
 				C7DB4BDD16C143D700CB1370 /* MapKit.framework in Frameworks */,
 				C7874C7916AC7DC7008852FD /* UIKit.framework in Frameworks */,
@@ -110,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C706430616D12A6000474457 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C706430016D12A3800474457 /* SVProgressHUD.bundle */,
+				C706430116D12A3800474457 /* SVProgressHUD.h */,
+				C706430216D12A3800474457 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		C764C98D16C2C01B00745911 /* HatenaBookmark */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +160,8 @@
 		C7874C6916AC7DC7008852FD = {
 			isa = PBXGroup;
 			children = (
+				C706430716D12C2900474457 /* QuartzCore.framework */,
+				C706430616D12A6000474457 /* SVProgressHUD */,
 				C7F34FE416C14C69003BBE45 /* CoreLocation.framework */,
 				C7DB4BDC16C143D700CB1370 /* MapKit.framework */,
 				C787273616AC90C500EF6A01 /* Default-Landscape@2x~ipad.png */,
@@ -321,6 +341,7 @@
 				C70642F316D11C8A00474457 /* arrow_left_24.png in Resources */,
 				C70642F516D11C9500474457 /* arrow_right_24.png in Resources */,
 				C70642F716D1214300474457 /* arrow_circle_right_24.png in Resources */,
+				C706430316D12A3800474457 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +363,7 @@
 				C782BCD816C15E0A000002F7 /* SimpleAnnotation.m in Sources */,
 				C764C98B16C2C01000745911 /* HatenaBookmarkViewController.m in Sources */,
 				C764C99916C2F21100745911 /* HatenaBookmarkDetailViewController.m in Sources */,
+				C706430416D12A3800474457 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

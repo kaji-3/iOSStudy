@@ -27,6 +27,12 @@
     if (self) {
         // Custom initialization
     }
+    // navigation Barの左側に[reload]ボタンを表示する。
+    self.navigationItem.leftBarButtonItem
+    = [[[UIBarButtonItem    alloc]
+        initWithTitle:@"reload"
+        style:UIBarButtonItemStylePlain
+        target:self action:@selector(reload)] autorelease];
     return self;
 }
 

@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="222" id="CXb-uU-SqD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                 <connections>
                                     <action selector="TxtUserId_EditingChenged:" destination="6Zq-XA-4XM" eventType="editingChanged" id="swO-E4-kJG"/>
                                     <action selector="closeKeyBoard:" destination="6Zq-XA-4XM" eventType="editingDidEndOnExit" id="0eL-xw-OHP"/>

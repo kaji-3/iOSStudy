@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70642F016D11C7A00474457 /* arrow_circle_right_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642EF16D11C7A00474457 /* arrow_circle_right_24.png */; };
+		C70642F316D11C8A00474457 /* arrow_left_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F216D11C8A00474457 /* arrow_left_24.png */; };
+		C70642F516D11C9500474457 /* arrow_right_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F416D11C9500474457 /* arrow_right_24.png */; };
+		C70642F716D1214300474457 /* arrow_circle_right_24.png in Resources */ = {isa = PBXBuildFile; fileRef = C70642F616D1214300474457 /* arrow_circle_right_24.png */; };
 		C72BFFE016AC860600697898 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFDF16AC860600697898 /* Storyboard.storyboard */; };
 		C72BFFE316AC866200697898 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */; };
 		C72BFFE916AC8ADB00697898 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BFFE816AC8ADB00697898 /* About.m */; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70642EF16D11C7A00474457 /* arrow_circle_right_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_circle_right_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_circle_right_24.png"; sourceTree = "<group>"; };
+		C70642F216D11C8A00474457 /* arrow_left_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_left_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_left_24.png"; sourceTree = "<group>"; };
+		C70642F416D11C9500474457 /* arrow_right_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_right_24.png"; sourceTree = "<group>"; };
+		C70642F616D1214300474457 /* arrow_circle_right_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_circle_right_24.png; path = "../../../../Downloads/TWG Retina Icons/arrow_circle_right_24.png"; sourceTree = "<group>"; };
 		C72BFFDF16AC860600697898 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		C72BFFE716AC8ADB00697898 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
@@ -141,6 +149,10 @@
 				C787273216AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png */,
 				C787272F16AC90B500EF6A01 /* Default-Landscape~ipad.png */,
 				C72BFFE216AC866200697898 /* Storyboard_iPad.storyboard */,
+				C70642EF16D11C7A00474457 /* arrow_circle_right_24.png */,
+				C70642F216D11C8A00474457 /* arrow_left_24.png */,
+				C70642F416D11C9500474457 /* arrow_right_24.png */,
+				C70642F616D1214300474457 /* arrow_circle_right_24.png */,
 				C7874C9D16AC7F1A008852FD /* Default@2x.png */,
 				C7874C9B16AC7F0B008852FD /* Default.png */,
 				C7874C9916AC7F00008852FD /* Default-568h@2x.png */,
@@ -305,6 +317,10 @@
 				C787273316AC90BC00EF6A01 /* Default-Portrait@2x~ipad.png in Resources */,
 				C787273516AC90C100EF6A01 /* Default-Portrait~ipad.png in Resources */,
 				C787273716AC90C500EF6A01 /* Default-Landscape@2x~ipad.png in Resources */,
+				C70642F016D11C7A00474457 /* arrow_circle_right_24.png in Resources */,
+				C70642F316D11C8A00474457 /* arrow_left_24.png in Resources */,
+				C70642F516D11C9500474457 /* arrow_right_24.png in Resources */,
+				C70642F716D1214300474457 /* arrow_circle_right_24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

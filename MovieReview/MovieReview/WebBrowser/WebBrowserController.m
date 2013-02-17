@@ -98,4 +98,15 @@
     [indicator stopAnimating];
     
 }
+- (IBAction)backButtonTouchDown:(id)sender {
+    [self.webView goBack];
+}
+
+- (IBAction)fowardButtonTouchDown:(id)sender {
+    [self.webView goForward];
+}
+
+- (IBAction)refleshButtonTouchDown:(id)sender {
+    [self.webView reload];
+}
 @end

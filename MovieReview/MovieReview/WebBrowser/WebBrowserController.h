@@ -15,4 +15,8 @@
 }
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
 
+- (IBAction)backButtonTouchDown:(id)sender;
+- (IBAction)fowardButtonTouchDown:(id)sender;
+- (IBAction)refleshButtonTouchDown:(id)sender;
+
 @end

@@ -27,8 +27,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initHeader];
     [self initIndicator];
     [self loadWebPage:@"http://www.yahoo.co.jp"];
+}
+
+- (void)initHeader
+{
+    [self.view addSubview:webHeaderView];
 }
 
 - (void) initIndicator {
